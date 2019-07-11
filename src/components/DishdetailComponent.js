@@ -42,10 +42,9 @@ renderComments(comments) {
                     return (
                         <li key={comment.id} >
                             <div>{comment.comment}</div>
-                            <div>
+                            <p>
                             &nbsp;&nbsp; --{comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
-                            </div>
-                        
+                            </p>
                             <br />
                         </li>
                     );
@@ -64,7 +63,7 @@ renderComments(comments) {
         if (dish != null) {
             return (
                 <div className="row" >
-                    <div className="col-12 col-md-5 m-1" >
+                    <div className=" col-12 col-md-5 m-1" >
                         <Card>
                             <CardImg top src={dish.image} alt={dish.name} />
                             <CardBody>
