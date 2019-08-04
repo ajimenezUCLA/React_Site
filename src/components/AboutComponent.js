@@ -27,7 +27,7 @@ function About(props) {
     });
 
     return (
-        <div className="container" style={{border: '1px solid red'}}>
+        <div className="container">
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
